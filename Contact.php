@@ -1,4 +1,16 @@
 <?php
+session_start();
+$msg='';
+if(isset($_SESSION['ANF']))
+{
+    $msg=" Admin Email Or Password Incorrect";
+}
+
+if(isset($_SESSION['UNF']))
+{
+    $msg="User Email Or Password Incorrect";
+}
+
 
 
 ?>
@@ -107,9 +119,10 @@
             </div>
         </div>
         <hr>
-        <section class=" flex items-center justify-center bg-gray-100">
+        <section class=" flex items-center justify-center bg-gray-100 mt-5">
     <div class="flex flex-col items-center justify-center bg-white p-8 rounded-lg ">
         <h1 class="text-5xl font-bold mb-5">Login</h1>
+        <h4 class="text-2xl font-semibold text-red-600"><?php echo $msg;?></h4>
         <div class="flex flex-row mt-5">
             <button onclick="openCity('admin')" class="relative inline-flex items-center justify-center p-2 mb-2 mr-2 text-sm font-medium text-gray-900 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 group hover:from-purple-700 hover:to-blue-600 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
                 <span class="relative px-5 py-2.5 transition-all ease-in duration-300 bg-white rounded-md group-hover:bg-opacity-0">
@@ -130,17 +143,17 @@
     <div class=" flex justify-center items-center bg-gray-100">
         <div class="py-6 px-8 h-80 mt-20  bg-white rounded shadow-xl">
             <h1 class="text-2xl font-bold mb-4">Admin Login</h1>
-            <form action="">
+            <form action="backend/backend.php" method="post">
                 <div class="mb-6">
-                    <label for="name" class="block text-gray-800 font-bold">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Username" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600">
+                    <label for="name" class="block text-gray-800 font-bold">Email:</label>
+                    <input type="Email" name="email" id="name" placeholder="Enter your email" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600">
                 </div>
                 <div class="mb-6">
-                    <label for="email" class="block text-gray-800 font-bold">Email:</label>
-                    <input type="text" name="email" id="email" placeholder="Email" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600">
+                    <label for="email" class="block text-gray-800 font-bold">Password:</label>
+                    <input type="text" name="password" id="email" placeholder="Enter your password" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600">
                     <a href="#" class="text-sm font-thin text-gray-800 hover:underline mt-2 inline-block hover:text-indigo-600">Forgot Password</a>
                 </div>
-                <button type="submit" class="cursor-pointer py-2 px-4 block mt-6 bg-indigo-500 text-white font-bold w-full rounded">Login</button>
+                <button type="submit" name="admin-login" class="cursor-pointer py-2 px-4 block mt-6 bg-indigo-500 text-white font-bold w-full rounded">Login</button>
             </form>
         </div>
     </div>
@@ -151,24 +164,24 @@
     <div class=" flex justify-center items-center bg-gray-100">
         <div class="py-6 px-8 h-80 mt-20  bg-white rounded shadow-xl">
             <h1 class="text-2xl font-bold mb-4">User Login</h1>
-            <form action="">
+            <form action="backend/backend.php" method="post">
                 <div class="mb-6">
-                    <label for="name" class="block text-gray-800 font-bold">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Username" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600">
+                    <label for="name" class="block text-gray-800 font-bold">Email:</label>
+                    <input type="email" name="email" id="name" placeholder="Enter your email" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600">
                 </div>
                 <div class="mb-6">
-                    <label for="email" class="block text-gray-800 font-bold">Email:</label>
-                    <input type="text" name="email" id="email" placeholder="Email" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600">
+                    <label for="email" class="block text-gray-800 font-bold">Password:</label>
+                    <input type="text" name="password" id="email" placeholder="Enter your password" class="w-full border border-gray-300 py-2 pl-3 rounded mt-2 outline-none focus:ring-indigo-600">
                     <a href="#" class="text-sm font-thin text-gray-800 hover:underline mt-2 inline-block hover:text-indigo-600">Forgot Password</a>
                 </div>
-                <button type="submit" class="cursor-pointer py-2 px-4 block mt-6 bg-indigo-500 text-white font-bold w-full rounded">Login</button>
+                <button type="submit" name="user-login" class="cursor-pointer py-2 px-4 block mt-6 bg-indigo-500 text-white font-bold w-full rounded">Login</button>
             </form>
         </div>
     </div>
 </div>
 <hr>
 
-<section class="min-h-screen bg-cover " style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+<section class="min-h-screen bg-cover mt-12 " style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
     <div class="flex flex-col min-h-screen bg-black/60">
         <div class="container flex flex-col flex-1 px-6 py-12 mx-auto">
             <div class="flex-1 lg:flex lg:items-center lg:-mx-6">
@@ -265,6 +278,9 @@
     }
 </script>
 
-<?php include ('footer.php');?>
+<?php include ('footer.php');
+unset($_SESSION['ANF']);
+unset($_SESSION['UNF']);
+?>
 </body>
 </html>
