@@ -4,148 +4,289 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site</title>
-<style>
-@keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(45deg, #4d9af3, #ff9900, #4adb4a, #3399ff, #cc66ff);
-        background-size: 600% 100%;
-        background-position: 0% 100%;
-    }
-    100% {
-        background: linear-gradient(45deg, #cc66ff, #3399ff, #5ce25c, #ff9900);
-        background-size: 600% 100%;
-        background-position: 100% 0%;
-    }
-}
-
-.bg-gradient-animation {
-    animation: gradientAnimation 10s linear infinite;
-}
-
-</style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="footerr.css" rel="stylesheet">
+    <link href="beforef.css" rel="stylesheet">
+    
 </head>
-<script src="https://cdn.tailwindcss.com"></script>
+
 <body>
-    <section class="bg-gradient-animation flex h-auto z-0">
-        <div class="container w-full h-auto "> 
-            <!--Header-->
-            <div class="w-full h-24 flex flex-row  mx-44">
-                <div class=" my-auto">
-                    <img  src="https://www.esalink.com/_next/static/media/esalink_logo_white.62726542.svg" class="h-14" />
-                </div>
-                <div class="my-auto ml-36 text-white ">
-                    <button class="border-2 p-2 flex flex-row p-1 rounded-xl hover:opacity-75">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="white">
-                            <path d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z"/>
-                        </svg><span class="px-1 font-bold text-sm">FACURATION ELECTRONIQUE 2024</span></button>
-                </div>
+    <div class="body11">
+        <div class="mainBodyContainer">
+            <div class="menumenu">
+                <ul class="me">
+                    <li  class="xxx"> <a href="#" class="mam">Factual Electronic 2024</a></li>
+                    <li > <a href="#" class="mam">Expertice</a></li>
+                    <li><a href="https://tarun-nine.vercel.app/" class="mam">Solution</a></li>
+                    <li><a href="#" class="mam">EService</a></li>
+                    <li><a href="Contact.php" class="mam">Contact</a></li>
+                    <li class="zin"> <a href="#" class="mam">Connesion</a></li>
+                    <li><a href="#" class="mam">Optenium</a></li>
 
-                <div class="flex flex-row my-auto mx-3 text-white">
-                    <a href="" class="px-4 text-xl font-semibold hover:underline">Expertise</a>
-                    <a href="" class="px-4 text-xl font-semibold hover:underline">Solution</a>
-                    <a href="" class="px-4 text-xl font-semibold hover:underline">Services</a>
-                    <a href="Contact.php" class="px-4 text-xl font-semibold hover:underline">Contact</a>
-                </div>
-
-                <div class="flex flex-row my-auto mx-12 text-white">
-                    <a href="" class="px-4 text-sm  font-semibold hover:underline my-2">CONNEXION TMA</a>
-                    <button class=" border-2 backdrop-blur-lg p-1 text-sm font-semibold mx-1 rounded">OBTENIR UNE DEMO</button>
-                    <select class="bg-transparent mx-2">
-                        <option class="text-black">FR</option>
-                        <option class="text-black">EN</option>
-                        <option class="text-black">TR</option>
-                    </select>
-                </div>
-
+                </ul>
             </div>
-
-            <!--Content-->
-            <div class="w-screen mx-44 flex flex-row py-12">
-                <div class="w-1/2  flex-col text-white ">
-                    <img class="h-24 w-48" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fiso-27001.c9102e6a.webp&w=1080&q=75"/>
-                    <h1 class="font-semibold text-7xl py-4">La dématérialisation <br> au service de votre business</h1>
-                    <p class="text-2xl py-4">Esalink vous accompagne dans la digitalisation de vos flux B2B</p>
-
-                    <div class="flex flex-row mt-6">
-                        <button class="border-2 rounded-lg p-2 text-lg font-semibold bg-blur-sm bg-blend-lighten">Trouver votre solution EDI</button>
-                        <button class="border-2 rounded-lg p-2 text-lg font-semibold mx-8 bg-blend-lighten">Passer a la facturation electronique</button>
-                    </div>                    
-                </div>
-                <div class="w-1/2 flex ">
-                    <img class="w-96 h-96   ms-96"  src="https://www.esalink.com/_next/static/media/globe_white_block.6699e2aa.svg" />
-                </div>                
+            <div class="imageContainer">
+                <img src="https:/www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fiso-27001.c9102e6a.webp&w=1080&q=75"
+                    class="webIconImage">
             </div>
-
-            <div class="flex flex-row mx-44 ">
-                <img class="w-24 h-14  mb-12 " src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgenerix-white.e5ab8b0c.webp&w=256&q=75"/>
-                <img class="w-24 h-14 mx-12 mb-12 " src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcleo-white.ad4618e5.webp&w=128&q=75"/>
-                <img class="w-24 h-14 mx-12 mb-12 " src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FHUBTIMIZE-white.19537ec6.webp&w=256&q=75"/>
-                <img class="w-24 h-14 mx-12 mb-12 " src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fibm-white.7d4e8780.webp&w=128&q=75"/>
-                <img class="w-24 h-14 mx-12 mb-12 " src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgs1-white.c6b5f462.webp&w=128&q=75"/>
-                <img class="w-24 h-14 mx-12 mb-12 " src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffne-white.f8c056bc.webp&w=640&q=75"/>
+            <h1 class="HeadingContainer">
+                La dématérialisation
+                <br>
+                au service de votre business
+            </h1>
+            <div class="descriptionTextContainer">
+                Esalink vous accompagne dans la digitalisation de vos flux B2B
             </div>
-                
+            <div class="twoButttonContainer">
+                <div class="buttons">Trouver votre solution EDI</div>
+                <div class="buttons">Passer à la facturation électronique</div>
+            </div>
+            <img src="https://www.esalink.com/_next/static/media/globe_white_block.6699e2aa.svg" class="globeIcon"
+                alt="">
+            <div class="bottomImageIcons">
+                <img src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgenerix-white.e5ab8b0c.webp&w=256&q=75"
+                    alt="" class="bootomIcons">
+                <img src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcleo-white.ad4618e5.webp&w=128&q=75"
+                    alt="" class="bootomIcons">
+                <img src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FHUBTIMIZE-white.19537ec6.webp&w=256&q=75"
+                    alt="" class="bootomIcons">
+                <img src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fibm-white.7d4e8780.webp&w=128&q=75"
+                    alt="" class="bootomIcons">
+                <img src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgs1-white.c6b5f462.webp&w=128&q=75"
+                    alt="" class="bootomIcons">
+                <img src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffne-white.f8c056bc.webp&w=640&q=75"
+                    alt="" class="bootomIcons">
+            </div>
         </div>
-    </section>
+    </div>
+    <div class="ved1">
+        <div class="ved11a">
+            <div class="d">
+                <h1><span style="color:#ee7752">Quand  </span>l'EDI rencontre l'innovation.</h1>
+                <p class="kk">Une solution d’intégration B2B qui allie les technologies de pointe à l’expérience utilisateur.</p>
+                <p class="kl">Demander uni demonstration</p>
+            </div> 
+            <div class="zen">
 
-    <!--SECOND SECTION-->
-    <section class="bg-white mt-8 my-12 h-auto">
-        <div class="my-4 mx-auto w-3/5 h-full">
-            <div class="flex flex-col  mt-16">
-                <h6 class="font-semibold text-lg ">TRELLO 101</h6>
-                <h2 class="font-semibold text-4xl mt-2">A productivity powerhouse</h2>
-                <p class="text-2xl mt-4 ">Simple, flexible, and powerful. All it takes are boards, lists, and<br> cards to get a clear view of who’s doing what and what needs to<br> get done. Learn more in our
-                    <a class="text-blue-600 underline "> guide for getting started</a>.</p>
             </div>
-
-            <div class="flex flex-row mt-12">
-                <div class="flex flex-col w-1/2">
-                    <button class="border-8 w-1/2 my-2 border-s-cyan-500 " onclick="changeImage('https:images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1140&fm=webp')">
-                        <h3 class="font-bold float-left w-full text-left mx-2">Boards</h3>
-                        <p class="text-base font-semibold text-left mx-2">Trello boards keep tasks organized and work moving forward. In a glance, see everything from “things to do” to “aww yeah, we did it!”</p>
-                    </button>
-                    <button class="border-8 w-1/2 my-2  " onclick="changeImage('https:images.ctfassets.net/rz1oowkt5gyp/4U0VUZYX2tQmB5KVGxBabp/7321ac088fe8ec39dbe3069c47d7df99/Carousel_Image_Lists_2x.png?w=1140&fm=webp')">
-                        <h3 class="font-bold float-left w-full text-left mx-2">Lists</h3>
-                        <p class="text-base font-semibold text-left mx-2">The different stages of a task. Start as simple as To Do, Doing or Done—or build a workflow custom fit to your team’s needs. There’s no wrong way to Trello.</p>
-                    </button>
-                    <button class="border-8 w-1/2 my-2  " onclick="changeImage('https:images.ctfassets.net/rz1oowkt5gyp/26CA6JZeRgoOK4nuRHnIlY/060702a80cf7c3be3651d9297d196267/Carousel_Image_Cards_2x.png?w=1140&fm=webp')">
-                        <h3 class="font-bold float-left w-full text-left mx-2">Cards</h3>
-                        <p class="text-base font-semibold text-left mx-2">Cards represent tasks and ideas and hold all the information to get the job done. As you make progress, move cards across lists to show their status.</p>
-                    </button>
+            <div class="aa">
+                <div class="ab ak">
+                    <div class="ddd aall  abc">
+                        <h2 class="a1">Design</h2>
+                        <p>Une interface moderne et intuitive alliant efficacité et simplicité.</p>
+                    </div>
+                    <div class="ddd aall ">
+                        <h2 class="aa2">Security</h2>
+                        <p>Une interface moderne et intuitive alliant efficacité et simplicité.</p>
+                    </div>
                 </div>
-                <div class="w-1/2">
-                    <img id="image" class="h-full w-screen" src="https:images.ctfassets.net/rz1oowkt5gyp/3N2U3C71rApm61cGFxnc2E/970b010002488a09a420282df5e7b43a/Carousel_Image_Boards_2x.png?w=1140&fm=webp">
+                <div class="ac ak">
+                    <div class="ddd aal ">
+                        <h2 class="a3">flexbity</h2>
+                        <p>Une interface moderne et intuitive alliant efficacité et simplicité.</p>
+                    </div>
+                    <div class="ddd aal  def">
+                        <h2 class="a4">Performance</h2>
+                        <p>Une interface moderne et intuitive alliant efficacité et simplicité.</p> 
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="ved1">
+        <div class="ved11">
+            <div class="d">
+                <h1><span style="color:#ee7752">HUBTIMIZE® </span>a été spécialement conçu sur les retours directs des utilisateurs d’EDI.</h1>
+            </div> 
+        </div>
+        <div class="ved12">
+            <div class="ved111 veda">
+                <img src="./images/img1.png"  class="vedimg"/>
+                <h2 class="head1">R&D Innovation</h2>
+                <p>HUBTIMIZE® a été spécialement conçu sur les retours directs des utilisateurs d’EDI.</p>
+            </div>
+            <div class="ved112 veda">
+                <img src="./images/img2.png"  class="vedimg"/>
+                <h2 class="head1">Expérience utilisateur</h2>
+                <p>Une interface moderne et intuitive, utilisable à la fois par des profils techniques et non techniques. Toutes les informations à portée de mains en quelques clics. Un support technique accessible en direct grâce au chat intégré.</p>
+            </div>
+            <div class="ved113 veda">
+                <img src="./images/img3.png"  class="vedimg"/>
+                <h2 class="head1">Haute disponibilité</h2>
+                <p>Une solution robuste codéveloppée avec IBM et hébergée sur AWS. HUBTIMIZE® vous propose les plus hauts standards de performance et de sécurité grâce à des technologies de pointes certifiées. Une haute disponibilité à toute épreuve.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ved1">
+        <div class="ved11">
+            <div class="d">
+                <h1>Nos secteurs d'activités<span style="color:#ee7752">d'activités </span></h1>
+                <p class="kk">Quel que soit votre secteur d'activité, nous sommes là pour vous accompagner.</p>
+            </div> 
+        </div>
+    </div>
+    <div class="secsec">
+        <div class="secsec1">
+            <div class="secsec11">
+                <img src="./images/img4.png">
+            </div>
+        </div>
+        <div class="secsec2">
+            <h2 class="hehe">Logistique</h2>
+            <li class="hello"><p>Une solution robuste codéveloppée avec IBM et hébergée sur AWS. HUBTIMIZE® vous propose les plus hauts s.</p></li>
+            <li class="hello"><p>Une solution robuste codéveloppée avec IBM et hébergée sur AWS. HUBTIMIZE® vous propose les plus hauts st</p></li>
+            <li class="hello"><p>Une solution robuste codéveloppée avec IBM et hébergée sur AWS. Hilité à toute épreuve.</p></li>
+        </div>
+    </div>
 
-    </section>
-    <hr>
-    <!--footer-->
-   <?php include('footer.php');?>
+    <div class="container mx-auto px-4 snipcss-GQnBw kick">
+        <h2 class="mb-5 mx-auto font-heading font-semibold text-center text-6xl sm:text-7xl text-gray-900 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
+          La satisfaction client ? Notre priorité !
+        </h2>
+        <p class="mb-16 text-lg max-w-2xl mx-auto text-center text-gray-600 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+          Nos différents clients et partenaires nous permettent de vous apporter la meilleure des Solutions proposées grâce aux multiples retours d’expérience et à de fréquentes veilles technologiques.
+        </p>
+        <div class="flex flex-wrap -m-5">
+          <div class="w-full md:w-1/3 p-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
+            <div class="h-full p-0.5 bg-gradient-cyan transform hover:-translate-y-3 rounded-10 transition ease-out duration-1000">
+              <div class="h-full px-7 py-8 bg-white rounded-lg">
+                <div class="flex justify-between">
+                  <img alt="Cedric T-DB | Esalink" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcedric.58f118ba.webp&amp;w=96&amp;q=75" width="43" height="43" decoding="async" data-nimg="1" class="mb-8 rounded-full style-QmEbx" loading="lazy" id="style-QmEbx">
+                  <img alt="Claire Fontaine Petit | Esalink" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FClairefontaine-Logo.48c3b571.webp&amp;w=3840&amp;q=75" width="1200" height="684" decoding="async" data-nimg="1" class="h-10 w-auto opacity-50 style-xC8pm" loading="lazy" id="style-xC8pm">
+                </div>
+                <p class="mb-8 text-lg text-gray-900 text-justify">
+                  “Le groupe Exacompta-Clairefontaine collabore avec EsaLink pour tous les projets liés à la plateforme TradeXpress EDI. Nous sommes satisfaits d’EsaLink, composé de consultants expérimentés et qualifiés. L’équipe est réactive, les projets sont réalisés dans les délais prévus.”
+                </p>
+                <h3 class="mb-1.5 font-heading font-bold text-lg text-gray-900">
+                  Cedric T-DB
+                </h3>
+                <p class="text-sm text-gray-600">
+                  DSI. EXACOMPTA - CLAIRFONTAINE
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block w-full md:w-1/3 p-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+            <div class="h-full p-0.5 bg-gradient-cyan transform hover:-translate-y-3 rounded-10 shadow-5xl transition ease-out duration-1000">
+              <div class="h-full px-7 py-8 bg-white rounded-lg">
+                <div class="flex justify-between">
+                  <img alt="Thomas M. | Esalink" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fthomas.460a66c2.webp&amp;w=96&amp;q=75" width="43" height="43" decoding="async" data-nimg="1" class="mb-8 rounded-full style-FzlkY" loading="lazy" id="style-FzlkY">
+                  <img alt="Nestlé Petit | Esalink" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FNestle-Logo.daf2552b.webp&amp;w=3840&amp;q=75" width="1800" height="1800" decoding="async" data-nimg="1" class="h-10 w-auto opacity-50 style-2TFrK" loading="lazy" id="style-2TFrK">
+                </div>
+                <p class="mb-8 text-lg text-gray-900 text-justify">
+                  “Travailler chez NESTLE, c'est travailler dans l’un des plus gros groupes mondiaux. En immersion totale dans leur équipe EDI, nous intervenons comme le catalyseur de toutes les sources d'information, et notre mission n'est pas simplement l'expertise EDI mais aussi l'accompagnement des différents interlocuteurs.”
+                </p>
+                <h3 class="mb-1.5 font-heading font-bold text-lg text-gray-900">
+                  Thomas M.
+                </h3>
+                <p class="text-sm text-gray-600">
+                  Expert EDI EsaLink. NESTLÉ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block w-full md:w-1/3 p-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1100">
+            <div class="h-full p-0.5 bg-gradient-cyan transform hover:-translate-y-3 rounded-10 transition ease-out duration-1000">
+              <div class="h-full px-7 py-8 bg-white rounded-lg">
+                <div class="flex justify-between">
+                  <img alt="Khaleelah PEERBOCUS | Esalink" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fkhaleelah.91597bc5.webp&amp;w=96&amp;q=75" width="43" height="43" decoding="async" data-nimg="1" class="mb-8 rounded-full style-64qrZ" loading="lazy" id="style-64qrZ">
+                  <img alt="Maccs Empowering | Esalink" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fmaccs.f2111184.webp&amp;w=1920&amp;q=75" width="787" height="317" decoding="async" data-nimg="1" class="h-10 w-auto opacity-50 style-SeEJR" loading="lazy" id="style-SeEJR">
+                </div>
+                <p class="mb-8 text-lg text-gray-900 text-justify">
+                  “L’équipe EsaLink a facilement compris nos exigences, et aujourd'hui MACCS fournit non seulement un service de qualité en ce qui concerne les messages EDI, mais nous avons également des experts EDI en interne grâce aux formations des experts EsaLink. La proximité et la convivialité d'EsaLink ont été très appréciées. Ce sont des experts dans le domaine.”
+                </p>
+                <h3 class="mb-1.5 font-heading font-bold text-lg text-gray-900">
+                  Khaleelah PEERBOCUS
+                </h3>
+                <p class="text-sm text-gray-600">
+                  Head Software Delivery. MACCS
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="bl" class="footer">
+          <div class="footerColumn">
+            <br>
+            <img id="wwe" class="flogoImg" src="https://www.esalink.com/_next/static/media/esalink_logo_white.62726542.svg" alt="">
+            
+            <p>Pricing</p>
+            <p>Contact us</p>
+            <p>Templates</p>
+            <p>SMB</p>
+            <img id="wwe1" class="flogoImg" src="https://www.esalink.com/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fgreen-hosted.e662235b.webp&w=640&q=75" alt="">
+            
+          </div>
+          <div class="footerColumn">
+            <!-- <div class="foothead">Features</div> -->
+            <!-- <p>Docs</p>
+            <p> Integrations</p>
+            <p>Automations</p>
+            <p>Files</p> -->
+            
+          </div>
+          <div class="footerColumn">
+            <div class="foothead"></div>
+            <!-- <p class="flogoContainer"><img class="flogo" src="./images/Footer_wm_logo.webp"> </p> -->
+            <!-- <p class="flogoContainer"><img class="flogo" src="./images/crm_icon_footer.webp"><span></span> -->
+            </p>
+            <p class="flogoContainer"><img class="flogo" src="./images/dev_new_mobile_footer_logo.webp">dev new mobile
+              footer logo</p>
+            <p>monday dev</p>
+            <div class="foothead">More by monday.com</div>
+            <p>workcanvas icon footer</p>
+            <p class="flogoContainer"><img src="./images/workcanvas_icon_footer.webp" class="flogo"
+                alt=""><span>WorkCanvas</span></p>
+            <p class="flogoContainer"><img src="./images/workforms_icon_footer.webp" class="flogo"
+                alt=""><span>workforms</span></p>
+          </div>
+    
+    
+    
+          <div class="footerColumn">
+            <!-- <div class="foothead">Use cases</div> -->
+            <p>Marketing</p>
+            <p>Project management</p>
+           
+            <p>HR</p>
+            <p>IT</p>
+            <p>Operations</p>
+            <p>Construction</p>
+          </div>
+          <div class="footerColumn">
+            <!-- <div class="foothead">Company</div> -->
+            <p>About us</p>
+            <p>Careers - We're hiring!</p>
+            <p>monday-U</p>
+            
+          </div>
+          <div class="footerColumn">
+            <!-- <div class="foothead">Resources</div> -->
+            <p>Help Center</p>
+            <p>Community</p>
+            <p>Blog</p>
+            <p>What's new</p>
+            
+          </div>
+        </div>
+        
+    
+       
+    
+    
+      </footer>
 
+    
+    <script src="./section2.js">
 
-<script>
-    function changeImage(imageSrc) {
-    // Change the image source
-    const imageElement = document.getElementById('image');
-    imageElement.src = imageSrc;
-
-    // Remove the focus state from all buttons
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(button => {
-        button.classList.remove('border-s-cyan-500');
-    });
-
-    // Add the focus state to the clicked button
-    event.currentTarget.classList.add('border-s-cyan-500');
-}
-
-</script>
+    </script>
 </body>
+
 </html>
