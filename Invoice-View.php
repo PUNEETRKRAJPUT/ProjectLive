@@ -44,9 +44,9 @@ $product=$row['Product'];
 <body>
 
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js" integrity="sha512-Fd3EQng6gZYBGzHbKd52pV76dXZZravPY7lxfg01nPx5mdekqS8kX4o1NfTtWiHqQyKhEGaReSf4BrtfKc+D5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js.map"></script>
 <?php include 'Header.php';?>
 <section>
     <div class="flex flex-row">
@@ -60,9 +60,9 @@ $product=$row['Product'];
          px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg         
          hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 
          disabled:shadow-none"
-  data-ripple-light="true" onclick="downloadPDF()">Download PDF</button>
+  data-ripple-light="true" id="printButton">Download PDF</button>
         
-        <div class="bg-white border rounded-lg shadow-lg px-6 py-8 max-w-md mx-auto mt-8" id="invoice">
+        <div class="bg-white border rounded-lg shadow-lg px-6 py-8 max-w-md mx-auto mt-8" id="contentToPrint">
     <h1 class="font-bold text-2xl my-4 text-center text-blue-600">GLA Services</h1>
     <hr class="mb-2">
     <div class="flex justify-between mb-6">
@@ -113,21 +113,24 @@ $product=$row['Product'];
     </div>
 </section>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    function downloadPDF() {
-      // Create a new jsPDF instance
-      const pdf = new jsPDF();
+// Get the print button element
+const printButton = document.getElementById('printButton');
 
-      // Get the content of the target div
-      const content = document.getElementById('invoice');
+// Get the content to print element
+const contentToPrint = document.getElementById('contentToPrint');
 
-      // Add the content to the PDF
-      pdf.fromHTML(content, 15, 15);
+// Add a click event listener to the print button
+printButton.addEventListener('click', () => {
+    // Hide the print button to avoid printing it
+    printButton.style.display = 'none';
 
-      // Save or download the PDF
-      pdf.save('invoice.pdf');
-    }
-  });
+    // Print the content within contentToPrint
+    window.print();
+
+    // Show the print button again after printing
+    printButton.style.display = 'block';
+});
+
 </script>
 
 
