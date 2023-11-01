@@ -38,6 +38,9 @@ if(isset($_POST['user-login']))
         $row=mysqli_fetch_array($result);
         $_SESSION['UID']=$row['ID'];  
         header('Location:../Dashboard.php');      
+    }else{
+        $_SESSION['UNF']=1;
+        header('Location:../Contact.php');
     }
 }
 
