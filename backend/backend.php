@@ -65,4 +65,17 @@ if(isset($_POST['generate']))
 
 }
 
+
+
+if(isset($_POST['delete-invoice']))
+{
+    $id=$_POST['delete-invoice'];
+
+    $sql="Delete from invoice where ID='$id'";
+    $result=mysqli_query($conn,$sql);
+    if($result==true)
+    {
+        header('location:../invoice.php');
+    }
+}
 ?>

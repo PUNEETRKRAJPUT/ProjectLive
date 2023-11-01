@@ -84,7 +84,7 @@ $row=mysqli_fetch_array($result);
           </div>
           <div id="menu" class="flex flex-col space-y-2">
             <a
-              href="Dashboard"
+              href="Dashboard.php"
               class="text-sm font-medium text-gray-700 py-2 px-2 hover:bg-teal-500 hover:text-white hover:text-base rounded-md transition duration-150 ease-in-out"
             >
               <svg

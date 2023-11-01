@@ -140,7 +140,7 @@ include('config/config.php');
                                         </form>
 
                                         <form action="backend/backend.php" method="post">   
-                                            <button type="submit" class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
+                                            <button type="submit" name="delete-invoice" value="<?php echo $row['ID']; ?>" class="text-blue-500 transition-colors duration-200 hover:text-indigo-500 focus:outline-none">
                                                 Delete
                                             </button>
                                         </form>
