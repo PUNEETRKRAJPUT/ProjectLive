@@ -38,15 +38,14 @@ $product=$row['Product'];
     animation: gradientAnimation 10s linear infinite;
 }
 
+
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js" integrity="sha512-Fd3EQng6gZYBGzHbKd52pV76dXZZravPY7lxfg01nPx5mdekqS8kX4o1NfTtWiHqQyKhEGaReSf4BrtfKc+D5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.min.js.map"></script>
+
 <?php include 'Header.php';?>
 <section>
     <div class="flex flex-row">
@@ -114,21 +113,16 @@ $product=$row['Product'];
 </section>
 <script>
 // Get the print button element
-const printButton = document.getElementById('printButton');
-
-// Get the content to print element
-const contentToPrint = document.getElementById('contentToPrint');
-
-// Add a click event listener to the print button
-printButton.addEventListener('click', () => {
-    // Hide the print button to avoid printing it
-    printButton.style.display = 'none';
-
-    // Print the content within contentToPrint
-    window.print();
-
-    // Show the print button again after printing
-    printButton.style.display = 'block';
+document.getElementById("printButton").addEventListener("click", function () {
+    var contentToPrint = document.getElementById("contentToPrint");
+    var printWindow = window.open("", "", "width=600,height=600");
+    printWindow.document.open();
+    printWindow.document.write('<html><head><title>Print</title></head><body>');
+    printWindow.document.write(contentToPrint.innerHTML);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    printWindow.print();
+    printWindow.close();
 });
 
 </script>
