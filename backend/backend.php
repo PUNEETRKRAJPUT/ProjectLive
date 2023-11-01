@@ -44,4 +44,25 @@ if(isset($_POST['user-login']))
     }
 }
 
+
+if(isset($_POST['generate']))
+{
+    $name=$_POST['name'];
+    $address=$_POST['address'];
+    $email=$_POST['email'];
+    $pname=$_POST['pname'];
+    $amount=$_POST['amount'];
+
+    $sql="INSERT INTO invoice (Name,Email,Address,Product,Amount)values('$name','$email','$address','$pname','$amount')";
+    $result=mysqli_query($conn,$sql);
+
+    if($result==true)
+    {
+        echo "done";
+    }else{
+        echo "not yet";
+    }
+
+}
+
 ?>

@@ -48,7 +48,7 @@ session_start();
 <div class="grid min-h-screen place-items-center">
   <div class="w-11/12 p-12 bg-white sm:w-8/12 md:w-1/2 lg:w-5/12">
     <h1 class="text-xl font-semibold"><span class="font-normal">please fill the information to continue</span></h1>
-    <form class="mt-6">
+    <form action="backend/backend.php" method="post" class="mt-6">
       <div class="flex justify-between gap-3">
         <span class="w-1/2">
           <label for="firstname" class="block text-xs font-semibold text-gray-600 uppercase">Name</label>
@@ -65,8 +65,8 @@ session_start();
       <input id="password" type="text" name="pname" placeholder="Product-Name"  class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
       <label for="password-confirm" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Amount</label>
       <input id="password-confirm" type="number" name="amount" placeholder="00"  class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
-      <button type="submit" class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
-        Sign up
+      <button type="submit" name="generate" class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
+        Generate
       </button>
       <p class="flex justify-between inline-block mt-4 text-xs text-gray-500 cursor-pointer hover:text-black">Already registered?</p>
     </form>
