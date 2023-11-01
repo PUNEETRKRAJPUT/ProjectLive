@@ -1,10 +1,11 @@
 <?php
-
+include("/config/config.php");
+/*
 $id=$_POST['view-invoice'];
 
 $sql="SELECT * from invoice WHERE ID='$id'";
 $result=mysqli_query($conn,$sql);
-$row=mysqli_fetch_array($result);
+$row=mysqli_fetch_array($result);*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
