@@ -58,7 +58,7 @@ if(isset($_POST['generate']))
 
     if($result==true)
     {
-        echo "done";
+        header("location:../Invoice.php");
     }else{
         echo "not yet";
     }
